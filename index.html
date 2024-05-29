@@ -6,37 +6,64 @@
 body {
     background: linear-gradient(to bottom left, black, black, blue, blue, black, black, blue, blue, white, white, white, white, white, white, white, white, white, white, blue, blue, black, black, blue, blue, black, black);
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    color: RED;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1 {
-    text-align: center;
     text-shadow: 1px 1px 1px black;
     margin: 0.2em 0;
     font-size: 5em;
     color: RED;
-    padding-right: 60px
+}
+
+.links-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
 }
 
 p {
     margin: 0.1em 0;
     font-size: 1.6em;
     color: BLACK;
-    padding-left: 40px
+}
+
+p.large {
+    font-size: 40px;
+}
+
+a {
+    font-size: 20px;
+    color: BLUE; /* You can set a specific color for links if needed */
+    text-decoration: none; /* Removes underline from links */
+    margin: 5px 0; /* Adds spacing between links */
+}
+
+a:hover {
+    text-decoration: underline; /* Adds underline on hover */
 }
 
 </style>
 </head>
 <body>
-<h1>Hey 🐶!</h1>
-<p><p><p><p></p></p></p></p>
-<p>I hope you have</p>
-<p>a fantastic day :)</p>
-<p>🎾🎾🎾🎾🎾🎾🎾</p>
+<div class="container">
+    <p class="large">Hey 🐶!</p>
+    <div class="links-container">
+        <p>🎾🎾 Links 🎾🎾</p>
+        <a href="https://bsky.app/profile/higgs.dog">bluesky</a>
+        <a href="https://www.instagram.com/puphiggs/">Instagram</a>
+    </div>
+</div>
 </body>
 </html>
